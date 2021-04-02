@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family:"Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: "Myriad Set Pro";
+  line-height: 1;
+
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+nav {
+  display: flex;
+  background-color: #333333;
+  height: 44px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+nav a {
+	width: 10%;
+	padding: 0 35px;
+	
+}
+nav a:hover {
+	color: grey;
+/* spent like an hour trying to get this to work, im not sure if it can since im using a png */
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+.hero {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.hero ul li{
+	font-size: 20px;
+}
+.product-img {
+  display: inline-block;
+}
+#product-info{
+	display: inline-block;
+	position: absolute;
+	width: 440px;
+	top: 261px;
+	margin-left: 50px;
+}
+#product-info img{
+	width: 330px;
+	height: 61px;
+	display: inline-block;
+	margin-left: 50px;
+}
+#li-links{
+	text-align: center;
+	font-weight: 300;
+}
+#li-links > li{
+	display: inline;
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 1.375;
+	margin: 0 6px 12px;
+}
+#product-info a:hover {
+	text-decoration: underline;
+}
+#product-info ul li{
+	font-size: 23px;
+	font-weight: 300;
+	margin: 0 6px 12px;
+	line-height: 1.350;
+}
+#product-links{
+	font-weight: 300px;
+}
+.subhero {
+	margin-top
+}
+.recall {
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: -0.1px;
+	margin: 22px 0 18px;
+}
+.recall a {
+	color: #08c;
+	text-decoration: none;
+}
+.recall a:hover {
+	text-decoration: underline;
+}
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  height: 200px;
+  vertical-align: top;
+  background-size: cover;
+  background-position: center;
+  padding: 5px;
+  border-right-width: 2px;
+}
+
+.hero a {
+	float: left;
+	padding: 20px;
+	margin-left: 20px;
+	white-space: nowrap;
+}
+a:link {
+	text-decoration: none;
+}
+.hero h2 {
+	font-size: 25px;
+  text-align: center;
+  font-size: 39.5px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+footer {
+	background-color: #E5E4E2;
+	width: 100%;
+	font-size: 11.94px;
+	line-height: 1.66667;
+	letter-spacing: -0.01px;
+	color: #666;
+	font-weight: 400;
+}
+footer > .container {
+	padding: 0 22px;
+}
+.col {
+	font-family: "Myriad Set Pro";
+	display: inline-block;;
+	vertical-align: top;
+	width: 20%;
+}
+.footer-nav {
+	padding-top: 20px;
+}
+.footer-nav ul:not(:first-child) {
+	padding-top: 20px;
+}
+.footer-nav ul > li:not(:first-child) > a {
+	text-decoration: none;
+	color: #666;
+}
+.footer-nav ul > li:not(:first-child) > a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+.first {
+	font-weight: 600;
+	color: #333;
+}
+.subhero {
+  border-right: 2px solid #fff;
+}
+.footer-bottom {
+	color: #999;
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
+.footer-bottom > p:first-child {
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 6px;
+	padding-bottom: 5px;
+}
+.footer-bottom > p:first-child > a:hover {
+	color: #333;
+	text-decoration: none;
+}
+.footer-bottom > p:first-child > a {
+	color: #08c;
+	text-decoration: none;
+}
+.footer-bottom > div {
+	display: inline-block;
+	vertical-align: top;
+}
+#legal {
+	margin-right: 22px;
+}
+#legal-links > a {
+	color: #666;
+	text-decoration: none;
+}
+#legal-links > a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+#legal-links > a:not(:last-child) {
+	border-right: 1px solid #d6d6d6;
+	margin-right: 10px;
+	padding-right: 12px;
+
+}
+#locale {
+	float: right;
+}
+#locale > a {
+	vertical-align: top;
+	display: inline-block;
+	text-decoration: none;
+	color: #666;
+}
+#locale-flag {
+	display: inline-block;
+	height: 16px;
+	width: 21px;
+	background: url(./images/usa.png) 3px 0 no-repeat;
+	background-size: 16px 16px;
+	margin-top: 1px;
+	padding-right: 1px;
+}
+#locale > a:hover {
+	color: #333;
+	text-decoration: underline;
+}
